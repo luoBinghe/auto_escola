@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import GlobalStyle from './GlobalStyle';
+import GlobalStyleComposed from './GlobalStyle';
 
 test('aaaaaa', () => {
-  render(<GlobalStyle />);
+  render(<GlobalStyleComposed />);
 
   expect(document.head).toMatchSnapshot();
 });
